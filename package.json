@@ -1,0 +1,22 @@
+{
+  "name": "x_meme_api",
+  "version": "1.0.0",
+  "description": "Submission_for_Crio_Winter_of_Doing_Stage_2B",
+  "license": "AGPLv3.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "superagent": "3.7.0",
+    "querystring": "0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "~2.3.4",
+    "sinon": "1.17.3",
+    "expect.js": "~0.3.1"
+  }
+}
