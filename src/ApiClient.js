@@ -47,9 +47,9 @@
     /**
      * The base URL against which to resolve every API call's (relative) path.
      * @type {String}
-     * @default http://127.0.0.1:8081
+     * @default http://143.110.183.79:8081
      */
-    this.basePath = 'http://127.0.0.1:8081'.replace(/\/+$/, '');
+    this.basePath = 'http://143.110.183.79:8081'.replace(/\/+$/, '');
 
     /**
      * The authentication methods to be included for all API calls.
