@@ -117,7 +117,7 @@ api.memeControllerCreateMeme(name, url, caption, callback);
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://143.110.183.79:8081*
+All URIs are relative to *https://api.xmeme.karngyan.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
