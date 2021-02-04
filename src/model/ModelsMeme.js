@@ -57,10 +57,14 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('caption'))
         obj.caption = ApiClient.convertToType(data['caption'], 'String');
+      if (data.hasOwnProperty('created'))
+        obj.created = ApiClient.convertToType(data['created'], 'Number');
       if (data.hasOwnProperty('id'))
         obj.id = ApiClient.convertToType(data['id'], 'Number');
       if (data.hasOwnProperty('name'))
         obj.name = ApiClient.convertToType(data['name'], 'String');
+      if (data.hasOwnProperty('updated'))
+        obj.updated = ApiClient.convertToType(data['updated'], 'Number');
       if (data.hasOwnProperty('url'))
         obj.url = ApiClient.convertToType(data['url'], 'String');
     }
@@ -73,6 +77,11 @@
   exports.prototype.caption = undefined;
 
   /**
+   * @member {Number} created
+   */
+  exports.prototype.created = undefined;
+
+  /**
    * @member {Number} id
    */
   exports.prototype.id = undefined;
@@ -81,6 +90,11 @@
    * @member {String} name
    */
   exports.prototype.name = undefined;
+
+  /**
+   * @member {Number} updated
+   */
+  exports.prototype.updated = undefined;
 
   /**
    * @member {String} url

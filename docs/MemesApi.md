@@ -4,9 +4,9 @@ All URIs are relative to *http://127.0.0.1:8081*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**memeControllerCreateMeme**](MemesApi.md#memeControllerCreateMeme) | **POST** /memes/memes | 
-[**memeControllerGetAllMemes**](MemesApi.md#memeControllerGetAllMemes) | **GET** /memes/memes | 
-[**memeControllerGetMeme**](MemesApi.md#memeControllerGetMeme) | **GET** /memes/memes/{mid} | 
+[**memeControllerCreateMeme**](MemesApi.md#memeControllerCreateMeme) | **POST** /memes/ | 
+[**memeControllerGetAllMemes**](MemesApi.md#memeControllerGetAllMemes) | **GET** /memes/ | 
+[**memeControllerGetMeme**](MemesApi.md#memeControllerGetMeme) | **GET** /memes/{mid} | 
 
 
 <a name="memeControllerCreateMeme"></a>

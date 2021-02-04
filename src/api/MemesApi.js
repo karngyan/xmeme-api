@@ -103,7 +103,7 @@
       var returnType = ModelsIResponse;
 
       return this.apiClient.callApi(
-        '/memes/memes', 'POST',
+        '/memes/', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -143,7 +143,7 @@
       var returnType = [ModelsMeme];
 
       return this.apiClient.callApi(
-        '/memes/memes', 'GET',
+        '/memes/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -190,7 +190,7 @@
       var returnType = ModelsMeme;
 
       return this.apiClient.callApi(
-        '/memes/memes/{mid}', 'GET',
+        '/memes/{mid}', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

@@ -121,9 +121,9 @@ All URIs are relative to *http://127.0.0.1:8081*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*XMemeApi.MemesApi* | [**memeControllerCreateMeme**](docs/MemesApi.md#memeControllerCreateMeme) | **POST** /memes/memes | 
-*XMemeApi.MemesApi* | [**memeControllerGetAllMemes**](docs/MemesApi.md#memeControllerGetAllMemes) | **GET** /memes/memes | 
-*XMemeApi.MemesApi* | [**memeControllerGetMeme**](docs/MemesApi.md#memeControllerGetMeme) | **GET** /memes/memes/{mid} | 
+*XMemeApi.MemesApi* | [**memeControllerCreateMeme**](docs/MemesApi.md#memeControllerCreateMeme) | **POST** /memes/ | 
+*XMemeApi.MemesApi* | [**memeControllerGetAllMemes**](docs/MemesApi.md#memeControllerGetAllMemes) | **GET** /memes/ | 
+*XMemeApi.MemesApi* | [**memeControllerGetMeme**](docs/MemesApi.md#memeControllerGetMeme) | **GET** /memes/{mid} | 
 
 
 ## Documentation for Models

@@ -80,10 +80,14 @@
               expect(data).to.be.a(XMemeApi.ModelsMeme);
               expect(data.caption).to.be.a('string');
               expect(data.caption).to.be("");
+              expect(data.created).to.be.a('number');
+              expect(data.created).to.be("0");
               expect(data.id).to.be.a('number');
               expect(data.id).to.be("0");
               expect(data.name).to.be.a('string');
               expect(data.name).to.be("");
+              expect(data.updated).to.be.a('number');
+              expect(data.updated).to.be("0");
               expect(data.url).to.be.a('string');
               expect(data.url).to.be("");
             }
@@ -110,10 +114,14 @@
             expect(data).to.be.a(XMemeApi.ModelsMeme);
             expect(data.caption).to.be.a('string');
             expect(data.caption).to.be("");
+            expect(data.created).to.be.a('number');
+            expect(data.created).to.be("0");
             expect(data.id).to.be.a('number');
             expect(data.id).to.be("0");
             expect(data.name).to.be.a('string');
             expect(data.name).to.be("");
+            expect(data.updated).to.be.a('number');
+            expect(data.updated).to.be("0");
             expect(data.url).to.be.a('string');
             expect(data.url).to.be("");
 
