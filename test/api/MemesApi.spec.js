@@ -40,11 +40,15 @@
         it('should call memeControllerCreateMeme successfully', function(done) {
           // TODO: uncomment, update parameter values for memeControllerCreateMeme call and complete the assertions
           /*
-          var name = "name_example";
-          var url = "url_example";
-          var caption = "caption_example";
+          var body = new XMemeApi.ModelsMeme();
+          body.caption = "";
+          body.created = "0";
+          body.id = "0";
+          body.name = "";
+          body.updated = "0";
+          body.url = "";
 
-          instance.memeControllerCreateMeme(name, url, caption, function(error, data, response) {
+          instance.memeControllerCreateMeme(body, function(error, data, response) {
             if (error) {
               done(error);
               return;

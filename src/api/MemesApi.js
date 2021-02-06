@@ -58,37 +58,22 @@
 
     /**
      * Create New XMeme
-     * @param {String} name name of the owner
-     * @param {String} url url of the meme
-     * @param {String} caption caption of the meme
+     * @param {module:model/ModelsMeme} body Meme Request
      * @param {module:api/MemesApi~memeControllerCreateMemeCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ModelsIResponse}
      */
-    this.memeControllerCreateMeme = function(name, url, caption, callback) {
-      var postBody = null;
+    this.memeControllerCreateMeme = function(body, callback) {
+      var postBody = body;
 
-      // verify the required parameter 'name' is set
-      if (name === undefined || name === null) {
-        throw new Error("Missing the required parameter 'name' when calling memeControllerCreateMeme");
-      }
-
-      // verify the required parameter 'url' is set
-      if (url === undefined || url === null) {
-        throw new Error("Missing the required parameter 'url' when calling memeControllerCreateMeme");
-      }
-
-      // verify the required parameter 'caption' is set
-      if (caption === undefined || caption === null) {
-        throw new Error("Missing the required parameter 'caption' when calling memeControllerCreateMeme");
+      // verify the required parameter 'body' is set
+      if (body === undefined || body === null) {
+        throw new Error("Missing the required parameter 'body' when calling memeControllerCreateMeme");
       }
 
 
       var pathParams = {
       };
       var queryParams = {
-        'name': name,
-        'url': url,
-        'caption': caption,
       };
       var collectionQueryParams = {
       };

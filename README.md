@@ -97,11 +97,7 @@ var XMemeApi = require('x_meme_api');
 
 var api = new XMemeApi.MemesApi()
 
-var name = "name_example"; // {String} name of the owner
-
-var url = "url_example"; // {String} url of the meme
-
-var caption = "caption_example"; // {String} caption of the meme
+var body = new XMemeApi.ModelsMeme(); // {ModelsMeme} Meme Request
 
 
 var callback = function(error, data, response) {
@@ -111,7 +107,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-api.memeControllerCreateMeme(name, url, caption, callback);
+api.memeControllerCreateMeme(body, callback);
 
 ```
 

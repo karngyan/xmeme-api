@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="memeControllerCreateMeme"></a>
 # **memeControllerCreateMeme**
-> ModelsIResponse memeControllerCreateMeme(name, url, caption)
+> ModelsIResponse memeControllerCreateMeme(body)
 
 
 
@@ -23,11 +23,7 @@ var XMemeApi = require('x_meme_api');
 
 var apiInstance = new XMemeApi.MemesApi();
 
-var name = "name_example"; // String | name of the owner
-
-var url = "url_example"; // String | url of the meme
-
-var caption = "caption_example"; // String | caption of the meme
+var body = new XMemeApi.ModelsMeme(); // ModelsMeme | Meme Request
 
 
 var callback = function(error, data, response) {
@@ -37,16 +33,14 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.memeControllerCreateMeme(name, url, caption, callback);
+apiInstance.memeControllerCreateMeme(body, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **String**| name of the owner | 
- **url** | **String**| url of the meme | 
- **caption** | **String**| caption of the meme | 
+ **body** | [**ModelsMeme**](ModelsMeme.md)| Meme Request | 
 
 ### Return type
 
